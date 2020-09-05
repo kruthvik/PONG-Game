@@ -139,13 +139,13 @@ def AI():
                 AI_Speed = 1.4
             distance = ball.ycor() - p_b.ycor()
             if(ball.dx > 0):
-                Change(0.8 * (distance * AI_Speed * 1.2) / 32)
+                Change(0.8 * (distance * AI_Speed * 1.2) / 28)
 
             distance *= 0.9
 
 
-    time.sleep(0.001)
-    wn.ontimer(AI, 12)
+    wn.ontimer(AI, 24)
+               
 
 
 
@@ -224,7 +224,7 @@ while True:
                 ball.goto(-330, 0)
                 ball.dx *= -1
                 p2 += 1
-                streak -= 1
+                streak -= 0.2
 
                 time.sleep(0.25)
 
