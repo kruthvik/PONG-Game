@@ -139,11 +139,11 @@ def AI():
                 AI_Speed = 1.4
             distance = ball.ycor() - p_b.ycor()
             if(ball.dx > 0):
-                Change(0.8 * (distance * AI_Speed * 1.2) / 28)
+                Change(0.8 * (distance * AI_Speed * 1.2) / 32)
 
             distance *= 0.9
 
-            print(AI_Speed)
+
     time.sleep(0.001)
     wn.ontimer(AI, 12)
 
