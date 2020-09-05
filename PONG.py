@@ -144,7 +144,7 @@ def AI():
             distance *= 0.9
 
 
-    wn.ontimer(AI, 24)
+    wn.ontimer(AI, 27)
                
 
 
